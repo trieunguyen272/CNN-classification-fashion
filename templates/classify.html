@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Ultimate Fashion Classifier</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+
+    <header id="id-header">
+        <p class="subtitle" style="font-size: 2.5rem">
+            FASHION CLASSIFICATION
+        </p>
+        <h4>Check what kind of fashion it is</h4>
+    </header>
+
+    <main>
+        <section class="hero is-fullheight" has-background-black>
+            <div class="columns">
+                <div class="column is-narrow">
+                </div>
+                <div class="column is-one-third has-text-centered">
+                    <img class="pred-img" style="border-style: solid" src="{{ url_for('send_file', filename=image_file_name)}}" />
+                </div>
+                <div class="column is-one-quarter">
+
+                    <h1 id="pred" style="font-size: 2rem; margin-top: 100px; margin-left: -100px; color: black">
+                        This is a <span style="font-weight: bold;">{{ label }}</span>
+                    </h1>
+
+                    <h1 style="font-size: 2rem; margin-top: 20px; margin-left: -100px; color: black">
+                        Confidence: <span style="font-weight: bold;">{{prob}} %</span>
+                    </h1>
+                    <br>
+                    <a href="/" style="margin-left: -30px; margin-top: -50px; font-size: 1.2rem; text-decoration:underline">Back to Home</a>
+                </div>
+            </div>
+
+            <section class="section">
+                <div class="container">
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <h5> Designed & Developed by NTT </h5>
+        <h5> @ Copyright 2022 - All Right Reserved.</h5>
+    </footer>
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

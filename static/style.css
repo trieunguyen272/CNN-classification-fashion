@@ -1,0 +1,97 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+
+#id-header {
+    height: 145px;
+    background-color: rgba(131, 234, 238, 0.479);
+}
+
+.subtitle {
+    width: 100%;
+    font-weight: bold;
+    color: black;
+    font-size: 1.8rem;
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#upload {
+    margin-top: 30px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    font-weight: bold;
+    color: black;
+}
+
+a {
+    font-size: 1rem;
+}
+
+main {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    height: 368px;
+    position: relative;
+    overflow: hidden;
+}
+
+#preview {
+    width: 300px;
+    height: 300px;
+    margin-left: 60px;
+}
+
+.pred-img {
+    width: 300px;
+    height: 300px;
+    margin-top: 35px;
+    margin-left: 700px;
+}
+
+.file {
+    margin-left: 70px;
+}
+
+.file-name {
+    text-align: center;
+    width: 150px;
+}
+
+#classify-button {
+    width: 120px;
+    height: 50px;
+    background-color: rgb(0, 162, 255);
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: -150px;
+    margin-top: -180px;
+}
+
+footer {
+    background-color: rgba(131, 234, 238, 0.479);
+    padding: 5vh 0;
+    text-align: center;
+    position: relative;
+}
+
+small {
+    opacity: .5;
+    font-weight: 300;
+}

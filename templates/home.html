@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Ultimate Fashion Classifier</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+    <header id="id-header">
+        <p class="subtitle" style="font-size: 2.5rem">
+            FASHION CLASSIFICATION
+        </p>
+        <h4>Check what kind of fashion it is</h4>
+    </header>
+
+    <main>
+
+        <section class="hero is-fullheight" has-background-black>
+            <section class="section">
+                <div class="container has-text-centered bg-text">
+
+                    <div>
+                        <i class="arrow_down"></i>
+                        <form action="/classify" method="post" enctype="multipart/form-data" id="upload">
+                            <div class="file has-name is-centered">
+                                <label class="file">
+                                    <input class="file-input" type="file" id="image" name = "image" >
+                                        <span class="file-cta">
+                                            <span class="file-label" type="file" onchange="readURL(this);" >
+                                                Upload an image
+                                            </span>
+                                        </span>
+                                        <span class="file-name" id="file-name" type="file" onchange="readURL(this);">
+                                            No file chosen
+                                        </span>
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="preview">
+                                </label>
+                            </div>
+                            <br>
+                            <input type="submit" value="Classify" class="button is-black" name="image" id="classify-button">
+                        </form>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <h5> Designed & Developed by NTT </h5>
+        <h5> @ Copyright 2022 - All Right Reserved.</h5>
+    </footer>
+    <script src="/static/script.js "></script>
+</body>
+
+</html>
